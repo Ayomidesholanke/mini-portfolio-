@@ -1,0 +1,346 @@
+/* Body */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #050505;
+    color: rgb(249, 244, 244);
+  }
+  
+  /* Navbar */
+  header {
+    background-color: rgb(1, 0, 0);
+    color: rgb(249, 244, 244);
+    padding: 8px 80px 10px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow:2px 5px 10px rgb(57, 56, 56) ;
+
+}
+  header .logo {
+    font-family: "Algerian", serif;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    
+  }
+
+  nav ul li {
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: rgb(241, 237, 238);
+    text-decoration: none;
+    font-size: 19px;
+}
+nav ul li a:hover {
+  font-weight: 900;
+  color: #920606;
+  font-size: 20px;
+}
+
+  
+  /* Hero Section */
+  #hero {
+    text-align: left;
+    padding: 4rem 2rem;
+    background-image: url(images/black.jpeg);
+    height: 80vh;
+    color: whitesmoke;
+    box-shadow:5px 8px 10px #302f2f;
+
+  }
+  
+  #hero h1 {
+    font-size: 3.5rem;
+    align-items: left;
+    padding: 0px 20px 0px 80px;
+  }
+
+  #hero h2 {
+    font-size: 3rem;
+    text-align: left;
+    padding: 0px 20px 10px 80px;
+  }
+
+  #hero h4 {
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 0px 20px 0px 80px;
+  }
+  
+  #hero p {
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 0px 20px 0px 70px;
+    
+  }
+
+  #hero #Home {
+    background-color:#920606;
+    color:rgb(24, 15, 15);
+    border-radius: 0px 60px 60px 60px;
+    padding: 50px 20px;
+    margin-left: 950px;
+    margin-right: auto;
+    margin-top: 0px;
+    border: 2px solid #920606;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+#hero #Home:hover {
+  background: rgb(59, 59, 59);
+  color: black;
+}
+
+/* About Section  */
+#about {
+  background: #f6f5f5;
+  color: #050505;
+  height: 50vh;
+  margin-top: 0px;
+  padding: 50px 40px 50px 80px;
+  font-size: 19px;
+}
+
+#about h2 {
+  padding-top:20px ;
+  padding-bottom:15px ;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#about h2:hover{
+  color:  #b10707;
+}
+
+/*Progress Section  */
+#progress {
+  background: #050000;
+  color: #f9f7f7;
+  height: 50vh;
+  margin-top: 0px;
+  padding: 50px 40px 50px 80px;
+  font-size: 19px;
+}
+
+#progress h2 {
+  padding-top:20px ;
+  padding-bottom:15px ;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#progress h2:hover{
+  color:  #920606;
+}
+
+#projects {
+  background: white;
+  color: #050000;
+  padding-top: 30px;
+}
+
+#projects h2 {
+  padding-top:40px ;
+  padding-bottom: 15px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#projects h2:hover{
+  color:  #920606;
+}
+
+
+#projects .project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  padding: 20px;
+  border: 1px solid #140303;
+  border-radius:  0px 12px 0px  12px;
+  text-align: center;
+  margin: 40px;
+  justify-content: space-between;
+  height: 350px;
+  box-shadow: 2px 2px 2px 3px #370101; 
+}
+
+.project-card h3 {
+  margin-top: 8px;
+  font-size: 20px;
+}
+
+.project-card button {
+  padding: 10px;
+  font-size: 15px;
+  background: #920606;
+  border-radius:0px 10px 0px 8px;
+  border: none;
+}
+
+.project-card button:hover {
+  background-color: rgb(20, 1, 1);
+  }
+
+.project-card button a {
+  color: white;
+  text-decoration: none;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#contact label {
+  margin-top: 10px;
+}
+
+#contact h2 {
+    padding-top:40px ;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  #contact h2:hover{
+    color:  #920606;
+  }
+
+#contact input, #contact textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid rgb(104, 6, 6);
+  border-radius: 5px;
+}
+
+#contact button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color:  #920606;
+  color: white;
+  border: none;
+  border-radius: 0px 12px 0px 12px;
+  cursor: pointer;
+}
+
+#contact button:hover {
+  background-color: rgb(41, 2, 2);
+}
+
+footer {
+  background-color:#920606;
+  color: rgb(24, 23, 23);
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: flex;
+  height: 20vh;
+  margin: 50px 0px 0px 0px;
+}
+
+footer .socials ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 10px 50px
+}
+
+footer .socials li a{
+  padding: 25px 30px;
+  color: black;
+  font-size: 30px;
+}
+
+footer .socials p {
+  padding-top: 12px;
+  font-size: 18px;
+}
+
+footer .socials li a:hover {
+  color: rgb(244, 244, 244);
+  font-size: 30px;
+}
+
+footer p {
+  font-size: 20px;
+  padding-top: 40px;
+  padding-left: 40px;
+  margin-left: 80px;
+}
+
+  
+  
+
+/* Hide the menu icon on large screens */
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+  .menu-icon {
+      display: block; 
+  }
+
+  .nav-links {
+      display: none; 
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      background: #010101;
+      text-align: center;
+      flex-direction: column;
+  }
+
+  .nav-links.show {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .nav-links li {
+      padding: 10px 0;
+  }
+
+  .nav-links a {
+      color: white;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+  }
+}
